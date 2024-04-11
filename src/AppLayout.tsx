@@ -1,14 +1,16 @@
 import React from "react";
+import Nav from "./Components/Nav";
 
 const AppLayout = () => {
     
     return(
         <div>
-            <div className="w-4/5 h-screen bg-slate-200 shadow-2xl ml-[10%] overflow-hidden absolute z-10 rounded-sm">
-
+            <div className="w-4/5 h-screen bg-slate-200 shadow-2xl ml-[10%] mr-[10%] absolute z-10 rounded-sm">
+                <Nav/>
+                <h1 className="mt-12 w-full text-2xl"> Welcome to my website </h1>
             </div>
-            <div className="overflow-hidden">
-                <div className="w-full h-full bg-sliding-pattern absolute opacity-30" id="sliding-pattern"></div>
+            <div className="overflow-hidden w-full h-full absolute">
+                <div className="absolute w-[6000px] h-full bg-[size:5%] bg-sliding-pattern opacity-50 animate-slide" id="slider"></div>
                 <div className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-40% to-emerald-500 to-90% absolute h-full w-full opacity-50"></div>
             </div>
         </div>
