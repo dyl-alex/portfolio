@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'sliding-pattern': "url('../background.jpg')"
+        'sliding-pattern': "url('../background.jpg')",
+        'headshot': "url('../headshot.jpg')",
       },
       keyframes: {
         slide: {
