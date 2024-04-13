@@ -8,6 +8,8 @@ module.exports = {
       backgroundImage: {
         'sliding-pattern': "url('../background.jpg')",
         'headshot': "url('../headshot.jpg')",
+        'icon1': "url('../icon1.jpeg')",
+        'icon2': "url('../icon2.png')"
       },
       keyframes: {
         slide: {

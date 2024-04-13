@@ -17,16 +17,16 @@ const AppLayout = () => {
     }
     return(
         <div>
-            <div className="w-4/5 h-[105%] sm:h-[98%] bg-slate-200 shadow-2xl ml-[10%] mr-[10%] absolute z-10 rounded mt-2 mb-2">
+            <div className="w-4/5 max-h-auto bg-slate-200 shadow-2xl ml-[10%] mr-[10%] absolute z-10 rounded mt-2 mb-2">
                 <Nav 
                 currentPage = {currentPage}
                 setCurrentPage = {setCurrentPage}
                 />
                 {buildPage()}
             </div>
-            <div className="overflow-hidden w-full h-[110%] sm:h-full absolute">
-                <div className="absolute w-[6000px] h-[105%] sm:h-full bg-[size:5%] bg-sliding-pattern opacity-50 animate-slide" id="slider"></div>
-                <div className="bg-gradient-to-b from-red-500 to-neutral-900 absolute h-full w-full opacity-50"></div>
+            <div className="overflow-hidden w-full min-h-full max-h-auto absolute">
+                <div className="absolute w-[6000px] h-full bg-[size:5%] bg-sliding-pattern opacity-50 animate-slide" id="slider"></div>
+                <div className="bg-gradient-to-b from-red-500 to-neutral-900 absolute min-h-full w-full opacity-50"></div>
             </div>
         </div>
     )

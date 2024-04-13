@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Nav = ({setCurrentPage, currentPage}) => {
 
@@ -18,7 +18,7 @@ const Nav = ({setCurrentPage, currentPage}) => {
     const navItems = navList.map((navItem) => 
     <div
         onClick={() => setCurrentPage(navItem.index)}
-        className={`w-1/5 h-full flex-1  hover:bg-slate-300 sm:hover:animate-fadeBig ${navItem.index == 2 ? 'rounded-r-lg' : ''} ${navItem.index == 0 ? 'rounded-l-lg' : ''} ${navItem.index === currentPage ? ' bg-teal-600 animate-fade' : 'bg-white'} overflow-hidden`}>
+        className={`w-1/5 h-full flex-1  hover:bg-slate-300 sm:hover:animate-fadeBig ${navItem.index === 2 ? 'rounded-r-lg' : ''} ${navItem.index === 0 ? 'rounded-l-lg' : ''} ${navItem.index === currentPage ? ' bg-teal-600 animate-fade' : 'bg-white'} overflow-hidden`}>
             <div className="mt-[10px]">{navItem.title}</div>
     </div>
     )

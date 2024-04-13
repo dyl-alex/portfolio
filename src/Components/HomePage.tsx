@@ -1,20 +1,35 @@
-import { Button} from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, Button} from "@mui/material";
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
-import React from "react";
+import React, { useState } from "react";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
 
 const HomePage = () => {
 
-    const onClick = () => {
+    const [isOpen, setisOpen] = useState(false);
 
+    const onOpen = (event: React.SyntheticEvent, expanded: boolean) => {
+        setisOpen(!isOpen);
     }
 
     return(
         <div>
             <h1 className="mt-5 w-full text-xl sm:text-2xl"> Welcome to my website </h1>
-            <div className="h-full sm:h-[200px] lg:h-[650px] md:flex md:h-[475px] w-full ">
+            {
+                <div className="sm:hidden m-3">
+                <Accordion
+                onChange={onOpen}
+                >
+                    <AccordionSummary
+                    expandIcon={<ArrowDropDownIcon/>}
+                    ><div className={`${isOpen ? 'opacity-0' : ''}`}>Headshot</div></AccordionSummary>
+                </Accordion>
+            </div>
+            }
+            <div className="h-full sm:h-[200px] lg:h-[650px] lg:max-h-[650px] sm:flex md:h-[475px] md:max-h-[800px] w-full ">
                 <div className="bg-[size:20%] sm:bg-[size:100%] md:flex-1 bg-headshot w-[100px] ml-4 mt-[20px] shadow-2xl rounded-lg
                 "></div>
-                <div className="sm:h-[200px] sm:w-[100px] md:h-auto md:flex-1 mt-[20px] ml-4 mr-4 bg-slate-100 rounded-lg shadow-2xl">
+                <div className="sm:h-[200px] sm:w-[100px] md:h-[800px] lg:h-auto  md:flex-1 mt-[20px] ml-4 mr-4 bg-slate-100 rounded-lg shadow-2xl">
                     <h1 className="mt-4 text-lg sm:text-2xl">General Information</h1>
                     <h2 className="text-md sm:text-lg"><b>Email:</b> Dyalexander@comcast.net</h2>
                     <h2 className="text-md sm:text-lg"><b>GitHub:</b> <a href="https://github.com/dyl-alex" className="text-blue-800">https://github.com/dyl-alex</a></h2>
