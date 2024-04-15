@@ -24,7 +24,7 @@ const AppLayout = () => {
                 />
                 {buildPage()}
             </div>
-            <div className="overflow-hidden w-full min-h-full max-h-auto absolute">
+            <div className="overflow-hidden w-full min-h-full max-h-auto fixed">
                 <div className="absolute w-[6000px] h-full bg-[size:5%] bg-sliding-pattern opacity-50 animate-slide" id="slider"></div>
                 <div className="bg-gradient-to-b from-red-500 to-neutral-900 absolute min-h-full w-full opacity-50"></div>
             </div>

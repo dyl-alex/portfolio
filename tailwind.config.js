@@ -8,7 +8,7 @@ module.exports = {
       backgroundImage: {
         'sliding-pattern': "url('../background.jpg')",
         'headshot': "url('../headshot.jpg')",
-        'icon1': "url('../icon1.jpeg')",
+        'icon1': "url('../caring_for_friends_thumbnail.jpg')",
         'icon2': "url('../icon2.png')"
       },
       keyframes: {
