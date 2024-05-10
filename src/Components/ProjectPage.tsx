@@ -6,7 +6,7 @@ const ProjectPage = () => {
 
     return(
         <div>
-            <div className="w-full align-middle flex-col">
+            <div className="w-full align-middle flex-col font-MerriWeather">
             <div className="w-5/6 h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] bg-slate-100 m-auto mt-6 rounded-xl shadow-lg mb-6 flex-1">
                 <div className="flex-col">
                     <div className="flex flex-1">

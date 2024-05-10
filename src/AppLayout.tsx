@@ -17,7 +17,7 @@ const AppLayout = () => {
     }
     return(
         <div>
-            <div className="w-4/5 max-h-auto bg-slate-200 shadow-2xl ml-[10%] mr-[10%] absolute z-10 rounded mt-2 mb-2">
+            <div className="w-4/5 max-h-auto bg-slate-50 shadow-2xl ml-[10%] mr-[10%] absolute z-10 rounded mt-2 mb-2">
                 <Nav 
                 currentPage = {currentPage}
                 setCurrentPage = {setCurrentPage}

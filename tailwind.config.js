@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'MerriWeather': ['Merriweather', 'serif'],
+        'Freeman': ['Freeman', 'sans-serif']
+      },
       backgroundImage: {
         'sliding-pattern': "url('../background.jpg')",
         'headshot': "url('../headshot.jpg')",

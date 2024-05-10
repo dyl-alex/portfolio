@@ -14,7 +14,9 @@ const HomePage = () => {
 
     return(
         <div>
-            <h1 className="mt-5 w-full text-xl sm:text-2xl"> Welcome to my website </h1>
+            <div className="sm:flex-col">
+
+            <h1 className="mt-5 w-full text-xl sm:text-2xl font-MerriWeather"> Welcome to my website </h1>
             {
                 <div className="sm:hidden m-3">
                 <Accordion
@@ -26,7 +28,7 @@ const HomePage = () => {
                 </Accordion>
             </div>
             }
-            <div className="h-full sm:h-[200px] lg:h-[650px] lg:max-h-[650px] sm:flex md:h-[475px] md:max-h-[800px] w-full ">
+            <div className="h-full sm:h-[200px] lg:h-[680px] lg:max-h-[680px] sm:flex md:h-[475px] md:max-h-[800px] w-full font-MerriWeather">
                 <div className="bg-[size:20%] sm:bg-[size:100%] md:flex-1 bg-headshot w-[100px] ml-4 mt-[20px] shadow-2xl rounded-lg
                 "></div>
                 <div className="sm:h-[200px] sm:w-[100px] md:h-[800px] lg:h-auto  md:flex-1 mt-[20px] ml-4 mr-4 bg-slate-100 rounded-lg shadow-2xl">
@@ -48,18 +50,21 @@ const HomePage = () => {
                     <h2 className="text-lg">Destro Machines</h2>
                     <h2 className="text-md">March 2022 - Current</h2>
                     <div className="flex flex-col align-middle w-full mb-3">
-                        <div className="w-5/6 mt-1 h-[220px] sm:h-[130px] bg-slate-300 rounded-xl shadow-md m-auto">
+                        <div className="w-5/6 mt-1 h-[220px] sm:h-[130px] lg:h-[155px] bg-slate-300 rounded-xl shadow-md m-auto">
                             <div className="text-sm sm:text-[17px] mt-4 ml-1 mr-1">Develop and manage a full stack application consisting of a React frontend, .Net backend following a Mediator pattern, and a PostgreSQL database built using a code first approach with Entity Framework. Regularly communicate with team members in an Agile workflow environment </div>
                         </div>
                     </div>
-                    <a href='Resume+2024.pdf' download>
+                    <div className="flex-1">
+                    <a href='Dylan Alexander Resume.pdf' download>
                         <Button component="label" variant="contained" size="large" tabIndex={-1} startIcon={<CloudDownloadIcon/>} style={{marginBottom: '10px'}}>
                                     Download Resume
                         </Button>
                     </a>
+                    </div>
                 </div>
             </div>
             <h1 className="text-lg m-1 sm:text-2xl sm:mt-2">Website created using React & Tailwindcss with help from MaterialUI</h1>
+        </div>
         </div>
     )
 }

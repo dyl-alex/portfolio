@@ -24,7 +24,7 @@ const Nav = ({setCurrentPage, currentPage}) => {
     )
     return(
         <div>
-            <div className={`w-4/5 ml-[10%] mr-[10%] h-[50px] mt-3 flex overflow-hidden shadow-2xl`}>
+            <div className={`w-4/5 ml-[10%] mr-[10%] h-[50px] mt-3 flex overflow-hidden shadow-2xl font-MerriWeather`}>
                 {navItems}
             </div>
         </div>
