@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.20c74db2.css",
-    "main.js": "/portfolio/static/js/main.83d90873.js",
+    "main.css": "/portfolio/static/css/main.f168d478.css",
+    "main.js": "/portfolio/static/js/main.a1ce86c5.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/caring_for_friends_thumbnail.jpg": "/portfolio/static/media/caring_for_friends_thumbnail.66b0de6d6be92e55df2e.jpg",
     "static/media/headshot.jpg": "/portfolio/static/media/headshot.7f66c7cd26a8b65e2dbe.jpg",
     "static/media/icon2.png": "/portfolio/static/media/icon2.7b8a9025b1a0c4306b50.png",
     "static/media/background.jpg": "/portfolio/static/media/background.dafdab0f73949a515c50.jpg",
     "index.html": "/portfolio/index.html",
-    "main.20c74db2.css.map": "/portfolio/static/css/main.20c74db2.css.map",
-    "main.83d90873.js.map": "/portfolio/static/js/main.83d90873.js.map",
+    "main.f168d478.css.map": "/portfolio/static/css/main.f168d478.css.map",
+    "main.a1ce86c5.js.map": "/portfolio/static/js/main.a1ce86c5.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20c74db2.css",
-    "static/js/main.83d90873.js"
+    "static/css/main.f168d478.css",
+    "static/js/main.a1ce86c5.js"
   ]
 }
